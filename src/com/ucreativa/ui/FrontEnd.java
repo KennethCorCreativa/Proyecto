@@ -19,8 +19,8 @@ public class FrontEnd extends JFrame {
     }
     private void construccionPantalla(){
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        super.setSize(500,300);
-        super.setLayout(new GridLayout(10,2));
+        super.setSize(700,500);
+        super.setLayout(new GridLayout(22,2));
     }
     private void crearComponentes(){
 
@@ -29,9 +29,16 @@ public class FrontEnd extends JFrame {
 
         JLabel lblNombre = new JLabel ("Nombre");
         JLabel lblCedula = new JLabel ("Cedula");
+        JLabel lblTipoPago = new JLabel ("Indique tipo de pago");
         JLabel lblCantidadNoches = new JLabel ("Cantidad de Noches");
-        JLabel lblTipoPago = new JLabel ("Tipo Pago: Efectivo-Tarjeta");
-        JLabel lblNacionalidad = new JLabel ("Eres Nacional o Extranjero?");
+        JLabel lblNacionalidad = new JLabel ("Eres Nacional ($20 por noche) o Extranjero ($25 por noche)?");
+        JLabel lblCorreoElectronico = new JLabel ("Corre Electronico");
+
+        JCheckBox lblTipoPago1 = new JCheckBox("Tarjeta");
+        JCheckBox lblTipoPago2 = new JCheckBox("Efectivo");
+        JCheckBox lblNacional = new JCheckBox("Nacional");
+        JCheckBox lblExtranjero = new JCheckBox("Extranjero");
+
 
         JTextField txtFecha1 = new JTextField();
         JTextField txtFecha2 = new JTextField();
@@ -41,6 +48,7 @@ public class FrontEnd extends JFrame {
         JTextField txtCantidadNoches = new JTextField();
         JTextField txtTipoPago = new JTextField();
         JTextField txtNacionalidad = new JTextField();
+        JTextField txtCorreoElectronico = new JTextField();
 
         this.agregarComponente(lblFecha1);
         this.agregarComponente(txtFecha1);
@@ -53,19 +61,22 @@ public class FrontEnd extends JFrame {
         this.agregarComponente(lblCantidadNoches);
         this.agregarComponente(txtCantidadNoches);
         this.agregarComponente(lblTipoPago);
-        this.agregarComponente(txtTipoPago);
+        this.agregarComponente(lblTipoPago1);
+        this.agregarComponente(lblTipoPago2);
         this.agregarComponente(lblNacionalidad);
-        this.agregarComponente(txtNacionalidad);
+        this.agregarComponente(lblNacional);
+        this.agregarComponente(lblExtranjero);
+        this.agregarComponente(lblCorreoElectronico);
+        this.agregarComponente(txtCorreoElectronico);
 
-        JLabel etiqueta;
+
         JButton boton;
         boton = new JButton("Enviar");
-        etiqueta = new JLabel("");
         add(boton);
         boton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                etiqueta.setText("Se ha confirmado su reserva");
+                boton.setText("Se ha enviado su información, en caso de disponibilidad se le va informar.");
             }
         });
 
