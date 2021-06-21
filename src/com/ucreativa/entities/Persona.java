@@ -3,14 +3,16 @@ package com.ucreativa.entities;
 public abstract class Persona {
     private String nombre;
     private String cedula;
-    private int edad;
+    private int cantidadnoches;
     private String tipopago;
+    private String nacionalidad;
 
-    public Persona(String nombre, String ceduda, int edad, String tipopago) {
+    public Persona(String nombre, String cedula, int cantidadnoches, String tipopago, String nacionalidad) {
         this.nombre = nombre;
         this.cedula = cedula;
-        this.edad = edad;
+        this.cantidadnoches = cantidadnoches;
         this.tipopago = tipopago;
+        this.nacionalidad = nacionalidad;
     }
 
 
@@ -20,11 +22,11 @@ public abstract class Persona {
     public String getCedula() {
         return cedula;
     }
-    public int getEdad() {
-        return edad;
-    }
     public String getTipopago() {
         return tipopago;
+    }
+    public String getNacionalidad() {
+        return nacionalidad;
     }
 
 }

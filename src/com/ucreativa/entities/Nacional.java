@@ -1,8 +1,8 @@
 package com.ucreativa.entities;
 
-public abstract class Nacional extends Persona {
-    public Nacional(String nombre, String cedula, int edad, String tipopago) {
-        super(nombre, cedula, edad, tipopago);
+public class Nacional extends Persona {
+    public Nacional(String nombre, String cedula, int cantidadnoches, String tipopago, String nacionalidad) {
+        super(nombre, cedula, cantidadnoches, tipopago, nacionalidad);
 
     }
 
