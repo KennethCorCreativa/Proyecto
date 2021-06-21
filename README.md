@@ -21,8 +21,8 @@ Ejemplo: una reserva puede ser de 1 noche/1 día teniendo la posibilidad de sali
 
 Funcionalidad:
 
-- Un hotel poco usual el cual se trabajo por lista de espera y por solicitud, es decir los usuarios envian sus datos juntos con preferencias de fechas y cuando se reciba dicha información se le indicaria al usuario si hay espacio o no ya que el formato es diferente y los clientes pueden incluso reservar solo para pasar el dia sin necesidad de quedarse a dormir.
+- Un hotel poco usual el cual se trabaja por lista de espera y por solicitud, es decir los usuarios envian sus datos juntos con preferencias de fechas y cuando se reciba dicha información se le indicaria al usuario si hay espacio o no ya que el formato es diferente y los clientes pueden incluso reservar solo para pasar el dia sin necesidad de quedarse a dormir.
 
-- Al darle run si se prueba en consola se tendra que ir escribiendo los datos que el sistema le solicite al usuario y al finalizar por medio de un "if" le va indicar al usuario el monto en dolares por noche dependiendo si es nacional o extranjero.
+- Al darle run si se prueba en consola/IDE se tendra que ir escribiendo los datos que el sistema le solicite al usuario y al finalizar por medio de un "if" le va indicar al usuario el monto en dolares por noche dependiendo si es nacional o extranjero.
 
 - Al darle run y usar la interfaz o "FrontEnd" creado entonces el cuadro va aparecer con los datos que el usuario debe llenar, este consta de "checkbuttons" y el botón "enviar" el cual se usa al haber llenado toda la información y mostrar el msj de que se le estaria contactando en caso de que si exista disponibilidad en las fechas indicadas.
