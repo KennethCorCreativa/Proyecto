@@ -1,6 +1,6 @@
 package com.ucreativa;
 
-import com.ucreativa.entities.FrontEnd;
+import com.ucreativa.ui.FrontEnd;
 
 import java.util.Scanner;
 

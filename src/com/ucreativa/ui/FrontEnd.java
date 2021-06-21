@@ -1,4 +1,4 @@
-package com.ucreativa.entities;
+package com.ucreativa.ui;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -20,9 +20,12 @@ public class FrontEnd extends JFrame {
     private void construccionPantalla(){
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         super.setSize(500,300);
-        super.setLayout(new GridLayout(5,1));
+        super.setLayout(new GridLayout(10,2));
     }
     private void crearComponentes(){
+
+        JLabel lblFecha1 = new JLabel ("Indique fecha de llegada");
+        JLabel lblFecha2 = new JLabel ("Indique fecha de salida");
 
         JLabel lblNombre = new JLabel ("Nombre");
         JLabel lblCedula = new JLabel ("Cedula");
@@ -30,12 +33,19 @@ public class FrontEnd extends JFrame {
         JLabel lblTipoPago = new JLabel ("Tipo Pago: Efectivo-Tarjeta");
         JLabel lblNacionalidad = new JLabel ("Eres Nacional o Extranjero?");
 
+        JTextField txtFecha1 = new JTextField();
+        JTextField txtFecha2 = new JTextField();
+
         JTextField txtNombre = new JTextField();
         JTextField txtCedula = new JTextField();
         JTextField txtCantidadNoches = new JTextField();
         JTextField txtTipoPago = new JTextField();
         JTextField txtNacionalidad = new JTextField();
 
+        this.agregarComponente(lblFecha1);
+        this.agregarComponente(txtFecha1);
+        this.agregarComponente(lblFecha2);
+        this.agregarComponente(txtFecha2);
         this.agregarComponente(lblNombre);
         this.agregarComponente(txtNombre);
         this.agregarComponente(lblCedula);
@@ -47,9 +57,23 @@ public class FrontEnd extends JFrame {
         this.agregarComponente(lblNacionalidad);
         this.agregarComponente(txtNacionalidad);
 
-        JButton salvar = new JButton("Salvar");
+        JLabel etiqueta;
+        JButton boton;
+        boton = new JButton("Enviar");
+        etiqueta = new JLabel("");
+        add(boton);
+        boton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                etiqueta.setText("Se ha confirmado su reserva");
+            }
+        });
+
+
 
         }
+
+
 
     }
 
