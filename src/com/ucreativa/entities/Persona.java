@@ -14,6 +14,7 @@ public abstract class Persona {
         this.cantidadnoches = cantidadnoches;
         this.tipopago = tipopago;
         this.nacionalidad = nacionalidad;
+        this.correoelectronico = correoelectronico;
     }
 
 
@@ -28,6 +29,9 @@ public abstract class Persona {
     }
     public String getNacionalidad() {
         return nacionalidad;
+    }
+    public String getCorreoelectronico() {
+        return correoelectronico;
     }
 
 }

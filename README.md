@@ -26,3 +26,6 @@ Funcionalidad:
 - Al darle run si se prueba en consola/IDE se tendra que ir escribiendo los datos que el sistema le solicite al usuario y al finalizar por medio de un "if" le va indicar al usuario el monto en dolares por noche dependiendo si es nacional o extranjero.
 
 - Al darle run y usar la interfaz o "FrontEnd" creado entonces el cuadro va aparecer con los datos que el usuario debe llenar, este consta de "checkbuttons" y el botón "enviar" el cual se usa al haber llenado toda la información y mostrar el msj de que se le estaria contactando en caso de que si exista disponibilidad en las fechas indicadas.
+
+
+Link a UML: https://drive.google.com/file/d/10Wqvqmt2iwTMOJg96-Sht6wcM7l6gS1U/view?usp=sharing
