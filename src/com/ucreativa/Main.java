@@ -25,7 +25,7 @@ public class Main {
         String cantidadnoches = sc.nextLine();
         System.out.println("Tipo de pago: Efectivo o Tarjeta");
         String tipopago = sc.nextLine();
-        System.out.println("Eres nacional o Extranjero?: ");
+        System.out.println("Eres Nacional o Extranjero?: ");
         String nacionalidad = sc.nextLine();
         System.out.println("Introduce tu Correo Electronico: ");
         String correoelectronico = sc.nextLine();
